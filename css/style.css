@@ -1,0 +1,141 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.wrapper {
+	width:  300px;
+	height: 600px;
+	border: solid 3px gray;
+	border-radius: 40px;
+	margin: 120px auto 0 auto;
+	transition-duration: 0.8s;
+}
+.wrapper-obod {
+	width: 294px;
+	height: 594px;
+	border: solid 8px black;
+	border-radius: 36px;
+}
+.monitor {
+	width: 278px;
+	height: 578px;
+	border-radius: 28px;
+	background: linear-gradient(50deg,blue,royalblue,lightblue,royalblue,blue);
+	padding: 40px 20px;
+}
+.apps {
+	display: grid;
+	grid-template: repeat(4,1fr) / repeat(4,1fr);
+}
+	.apps div{
+		width: 40px;
+		height: 40px;
+		border: solid 1px black;
+		margin: 10px auto;
+		border-radius: 10px;
+		transition-duration: 0.6s;
+	}
+		.apps div img{
+			width: 36px;
+			height: 36px;
+			margin: 2px;
+		}
+.a1 {
+	background: orangered;
+}
+.a2 {
+	background: greenyellow;
+}
+.a3 {
+	background: blueviolet;
+}
+.a4 {
+	background: lightcoral;
+}
+.a5 {
+	background: crimson;
+}
+.a6 {
+	background: wheat;
+}
+.a7 {
+	background: khaki;
+}
+
+.thing {
+	width: 130px;
+	height: 20px;
+	background: black;
+	position: absolute;
+	margin-left: 75px;
+	border-radius: 0 0 10px 10px;
+	display: inline-flex;
+}
+.glass {
+	width: 15px;
+	height: 15px;
+	background: blue;
+	border-radius: 15px;
+	margin-left: 10px;
+}
+.din {
+	width: 75px;
+	height: 5px;
+	background: gray;
+	border: solid 1px slateblue;
+	margin-left: 15px;
+	margin-top: 4px;
+	border-radius: 5px;
+}
+.text p{
+	color: rgba(0, 0, 0, 0);
+	transition-duration: 3s;
+}
+/*--------------------*/
+.apps div:hover{
+	transform: scale(1.2);
+	border: solid 1px whitesmoke;
+}
+.wrapper:hover{
+	transform: matrix(1.15,0,0.2,1.15,50,0);
+	box-shadow: -6px 6px 0 black;
+}
+.wrapper:hover .text p{
+	color: rgba(0, 0, 0, 1);
+}
